@@ -1,0 +1,264 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*css reset*/
+*, *::before, *::after {   
+    box-sizing: border-box;
+}
+.wrap{
+	width: 800px;
+	margin: 10px auto;
+}
+/*header*/
+.header{
+	background-color: rgb(222, 221, 221);
+}
+.header ul{
+	display: flex;
+	justify-content: end;
+}
+.header li{
+	margin: 7px 0;
+	padding: 0 8px;
+}
+.header li:first-child{
+	border-right: 1px solid black;
+}
+.header li a:hover{
+	color:rgb(150, 207, 207);
+}
+.header a{
+	text-decoration: none;
+	font-weight: 600;
+}
+
+/*list*/
+.info-list{
+	display: flex;
+	justify-content: space-between;
+}
+.info-list h1 a{
+	display: block;
+	width: 244px;
+	height: 50px;
+	background-image: url(https://ppt.cc/fZUJqx@.png);
+	overflow: hidden;
+	text-indent: 101%;
+	white-space: nowrap;
+}
+.floder{
+	display: flex;
+	width: 50%;
+	justify-content:end;
+	align-items: center;
+}
+.floder > li{
+	position: relative;
+}
+.floder > li > a{
+	text-decoration: none;
+	color:rgb(93, 185, 154) ;
+	font-weight: 700;
+	font-size: 18px;
+	display: block;
+	padding: 25px;
+}
+.floder > li >a:hover,.floder > li >a.active{
+	border-bottom: 3px solid rgb(93, 185, 154);
+}
+.product-list {
+	display: none;
+	position:absolute ;
+	width: 100%;
+	background-color: rgba(2, 41, 11, 0.8);
+	z-index: 3 ;
+}
+.product-list > li > a{
+	display: block;
+	color: white;
+	font-size: 20px;
+	padding: 3px 0;
+	border: 1px solid transparent;
+	text-align: center;
+	text-decoration: none;
+}
+.content{
+	position:relative;
+	margin-bottom: 50px;
+}
+.content h2{
+	font-size: 36px;
+	padding: 30px;
+	color: white;
+	background-color: rgba(0,0,0,0.3);
+	position: absolute;
+	z-index: 2;
+	top: 30%;
+	width: 100%;
+	line-height: 2;
+	box-sizing: border-box;
+}
+/*swiper*/
+.swiper {
+	width: 800px;
+	height: 500px;
+	z-index: 1;
+  }
+
+.mainskill{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+.mainskill > li > a{
+	display: flex;
+	justify-content: center;
+}
+.mainskill > li{
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px #dbdbdb;
+	width: 33%;
+}
+.mainskill > li > h2{
+	text-align: center;
+	padding: 15px 0;
+	font-size: 28px;
+	font-weight: 600;
+}
+.mainskill > li > p{
+	text-align:start;
+	padding: 0 5px 10px;
+	font-size: 20px;
+	line-height: 1.3;
+}
+.mainskill-jq{
+	list-style: disc;
+	font-size: 20px;
+	padding-left: 30px;
+	line-height: 1.5;
+}
+.compare h2{
+	text-align: center;
+	font-size: 32px;
+	font-weight: 600;
+	padding: 20px 0 30px;
+}
+.compare table{
+	width: 95%;
+	margin: 0 auto;
+}
+.compare th,td{
+	text-align: start;
+	padding: 10px 15px;
+	font-size: 18px;
+	
+	border-bottom: 1px solid #dddddd;
+}
+tr:first-child{
+	background-color: rgb(179, 177, 177);
+}
+span{
+	color: rgb(131, 199, 173);
+}
+
+.feedback{
+	background:linear-gradient(#00654b, #009772);;
+	padding: 10px;
+}
+.feedback h2{
+	font-size: 24px;
+	padding: 20px;
+	margin: 0 auto;
+	color: white;
+	text-align: start;
+	line-height: 1.5;
+	width: 40%;
+}
+.feedback-cot{
+	display: flex;
+	justify-content: space-around;
+}
+.feedback-cot textarea{
+	width: 45%;
+	border-radius: 10px;
+}
+.infor{
+	width: 50%;
+}
+.infor label{
+	font-size: 18px;
+	color: white;
+}
+.infor input{
+	margin: 10px 0;
+	width: 100%;
+}
+#bnt{
+	width: 20%;
+	float: right;
+	background-color: rgb(113, 219, 217);
+	color: white;
+	font-size: 18px;
+	border: 1px solid rgb(145, 145, 145);
+}
+.footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px;
+}
+.footer li{
+	padding: 5px 10px;
+	font-size: 15px;
+}
+.top-bnt{
+	position: fixed;
+	right: 60px;
+    bottom: 10px;
+}
